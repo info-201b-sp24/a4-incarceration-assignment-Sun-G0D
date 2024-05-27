@@ -57,24 +57,14 @@ This chart was included to show an alarming problem with incarceration in Americ
 
 ### Variable Comparison Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The second chart that you will create and include will show how two different (continuous) variables are related to one another. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- If you choose to add a color encoding (not required), you need a legend for your different color and a clear legend title
+This chart was included to show how urbanicity tends to affect incarceration rates across every racial group. As more of America develops, it's important to analyze how gentrification and urbanization affect ongoing trends of mass incarceration. Here I've taken the urbanicity variable from the dataset and plotted it as a continuous variable ranging from "rural" to "urban". Looking at the average incarceration rates across the entirety of dataset a clear trend emerges, showing that with higher urbanicity, an area tends to incarcerate at lower rates in almost every ethnic group. Concerningly, the problem of Black Americans being incarcerated at higher rates still exists.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("var_comparison.R")}
 ```
 
 ### Map
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
+This map was included to show how each state's incarceration rates are affected by urbanization.One interesting pattern that arises is that states of higher population's tend to see a positive change in incarceration rate as urbanization increases. Utah seems to stick out like a sore thumb though, likely due to outliers in the data. Another interesting trend to note, is that in states that touch the gulf of mexico seem to have significantly higher changes in incarceration rate across urbanicity levels. One possible explanation of this is that their stricter immigration policies are resulting in higher incarceration rates.
 
-The last chart that you will create and include will show how a variable is distributed geographically. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Your map needs a title
-- Your color scale needs a legend with a clear label
-- Use a map based coordinate system to set the aspect ratio of your map
-
+```{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("map.R")}
+```

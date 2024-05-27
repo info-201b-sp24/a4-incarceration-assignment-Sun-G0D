@@ -36,7 +36,7 @@ agg_data$racial_group <- str_to_title(agg_data$racial_group)
 ggplot(agg_data, aes(x = year, y = incarceration_rate, color = racial_group)) +
   geom_line(size = 1) +
   labs(
-    title = "Incarceration Trends Over Time by Racial Group in the U.S. (1990 and Beyond)",
+    title = "Incarceration Trends Over Time by Racial Group",
     x = "Year",
     y = "Incarceration Rate per 100,000 People",
     color = "Racial Group"
